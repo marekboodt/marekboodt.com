@@ -20,20 +20,27 @@
       font-size: 2em;
     }
     .button-container {
-      display: flex;
-      gap: 20px;
-    }
-    a.button {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 20px;
-      text-decoration: none;
-      color: white;
-      border-radius: 6px;
-      font-size: 1em;
-      transition: background-color 0.3s ease;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 0;
+    min-width: 150px;
+    flex: 1 1 150px; /* responsive layout */
+    max-width: 200px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
     a.github {
       background-color: #181717;
     }
