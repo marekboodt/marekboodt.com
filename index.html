@@ -23,7 +23,7 @@
     h1 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 700;
-      font-size: 2em;
+      font-size: clamp(2rem, 5vw, 3rem);
       margin-bottom: 40px;
       text-align: center;
       color: #1a1a2e;
@@ -40,14 +40,14 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 12px 0;
+    padding: 14px 0; 
+    font-size: 1.1em;
     min-width: 150px;
     flex: 1 1 150px; /* responsive layout */
     max-width: 200px;
     text-decoration: none;
     color: white;
     border-radius: 6px;
-    font-size: 1em;
     transition: background-color 0.3s ease;
   }
     a.github {
